@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function isInteger(a) {
+            return (a^0) === a;
+        }
+
+        alert( isInteger(1) ); // true
+        alert( isInteger(1.5) ); // false
+        alert( isInteger(-0.5) ); // false
+
+    </script>
+</body>
+</html>
