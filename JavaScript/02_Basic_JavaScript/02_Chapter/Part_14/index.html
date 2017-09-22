@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        alert( null >= 0 ); // true, т.к. null преобразуется к 0
+        alert( null > 0 ); // false (не больше), т.к. null преобразуется к 0
+        alert( null == 0 ); // false (и не равен!), т.к. == рассматривает null особо.
+        alert( +null >= 0 ); // true, т.к. null преобразуется к 0
+        alert( +null > 0 ); // false (не больше), т.к. null преобразуется к 0
+        alert( +null == 0 ); // true, т.к. null преобразуется к 0
+    </script>
+</body>
+</html>

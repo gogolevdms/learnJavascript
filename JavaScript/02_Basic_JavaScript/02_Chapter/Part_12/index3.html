@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var userName = prompt('Кто пришёл?:', 'Имя!!! пожалуйста)');
+
+        if (userName === 'Админ') {
+            var password = prompt('Пароль?:', 'Пароль!!! пожалуйста)');
+            if (password === 'Вежливость') {
+                alert('Добро пожаловать!');
+            } else if (password === null) {
+                alert('Вход отменен');
+            } else {
+                alert('Пароль не верен');
+            }
+        } else if (userName === null) {
+            alert('Вход отменен');
+        } else {
+            alert('Я вас не знаю');
+        }
+    </script>
+</body>
+</html>
