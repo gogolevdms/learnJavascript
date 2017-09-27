@@ -14,6 +14,10 @@
         }
         return str;
     }
+    function truncate2(str, maxlength) {
+        return (str.length > maxlength) ? str.slice(0, maxlength - 3) + '...' : str;
+    }
+
 </script>
 </body>
 </html>
