@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function getRandom1(max) {
+        return Math.random() * max;
+    }
+    function getRandom2(min, max) {
+        return min + Math.random() * (max - min);
+    }
+    function randomInteger(min, max) {
+        return Math.floor(min + Math.random() * (max + 1 - min));
+    }
+    alert(getRandom1(10));
+    alert(getRandom2(5, 10));
+    alert(randomInteger(5, 10));
+
+</script>
+</body>
+</html>

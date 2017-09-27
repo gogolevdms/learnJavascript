@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="https://js.cx/test/libs.js"></script>
+    <script src="test2.js"></script>
+</head>
+<body>
+    <script>
+        function getDecimal(num) {
+            num > 0 ? decimal = (num % 1) : decimal = -(num % 1);
+            return Math.round(decimal * 1000)/1000;
+        }
+        alert( getDecimal(12.345) ); // 0.345
+        alert( getDecimal(1.2) ); // 0.2
+        alert( getDecimal(-1.2) ); // 0.2
+    </script>
+</body>
+</html>
