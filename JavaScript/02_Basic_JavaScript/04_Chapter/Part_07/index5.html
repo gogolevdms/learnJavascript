@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    "use strict";
+
+    var numbers = [];
+
+    while (true){
+        var value = prompt('Введите число для суммирования', 0);
+
+        if (value === "" || value === null || isNaN(value)) break;
+
+        numbers.push(+value);
+    }
+
+    var sum = 0;
+    for (var i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+
+    alert( sum );
+
+
+</script>
+</body>
+</html>

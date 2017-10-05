@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://js.cx/test/libs.js"></script>
+    <script src="test7.js"></script>
+</head>
+<body>
+<script>
+    function find(arr, value) {
+        if (arr.indexOf) { // если метод существует
+            return arr.indexOf(value);
+        }
+
+        for (var i = 0; i < arr.length; i++){
+            if (arr[i] === value) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+
+
+//    if ([].indexOf) {
+//
+//        var find = function(arr, value) {
+//            return array.indexOf(value);
+//        }
+//
+//    } else {
+//        var find = function(arr, value) {
+//            for (var i = 0; i < arr.length; i++) {
+//                if (array[i] === value) return i;
+//            }
+//
+//            return -1;
+//        }
+//
+//    }
+
+
+</script>
+</body>
+</html>
