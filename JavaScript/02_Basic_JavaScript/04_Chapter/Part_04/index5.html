@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://js.cx/test/libs.js"></script>
+    <script src="test5.js"></script>
+</head>
+<body>
+<script>
+    "use strict";
+
+    function isNumeric(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n)
+    }
+
+    function multiplyNumeric(obj) {
+        for (var key in obj) {
+            if (isNumeric(obj[key])) {
+                obj[key] *= 2;
+            }
+        }
+    }
+
+    var menu = {
+        width: 200,
+        height: 300,
+        title: "My menu"
+    };
+
+    alert( "menu width=" + menu.width + " height=" + menu.height + " title=" + menu.title );
+
+    multiplyNumeric(menu);
+
+    for (var key in menu) {
+        alert( menu[key]);
+    }
+
+</script>
+</body>
+</html>
