@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var vasya = { name: "Вася", age: 23 };
+    var masha = { name: "Маша", age: 18 };
+    var vovochka = { name: "Вовочка", age: 6 };
+
+    var people = [ vasya , masha , vovochka ];
+
+    function sortByAge(a, b) {
+        return a.age - b.age;
+    }
+
+    people.sort(sortByAge);
+    alert( people );
+
+    // теперь people: [vovochka, masha, vasya]
+    alert(people[0].age) // 6
+
+</script>
+</body>
+</html>

@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://js.cx/test/libs.js"></script>
-    <script src="test.js"></script>
+    <script src="test3.js"></script>
 </head>
 <body>
 <script>
-    var obj = {
-        className: 'open menu'
+    obj = {
+        className: 'my menu menu'
     };
 
-    function addClass(obj, cls){
+    function removeClass(obj, cls) {
         var arr = obj.className ? obj.className.split(' ') : [];
-
 
         for (var i = 0; i < arr.length; i++) {
             if (arr[i] === cls){
-                return;
+                arr.splice(i, 1);
+                i--;
             }
-        }
 
-        arr.push(cls);
+        }
         obj.className = arr.join(' ');
     }
 
-    addClass(obj, 'new');
-    addClass(obj, 'open');
-    addClass(obj, 'me');
-    alert(obj.className) // open menu new me
+    removeClass(obj, 'blabla'); // без изменений (нет такого класса)
+    alert( obj.className ); // 'my menu menu'
+    removeClass(obj, 'menu');
+    alert( obj.className ); // 'my'
+
 
 </script>
 </body>
