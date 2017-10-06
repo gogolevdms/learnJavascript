@@ -8,7 +8,23 @@
 </head>
 <body>
 <script>
+    function unique(arr) {
+        var obj = {};
 
+        for (var i = 0; i < arr.length; i++) {
+            // разбить строку на буквы, отсортировать и слить обратно
+            var sorted = arr[i];
+            obj[sorted] = true; // сохраняет только одно значение с таким ключом
+        }
+
+        return Object.keys(obj);
+    }
+
+    var strings = ["кришна", "кришна", "харе", "харе",
+        "харе", "харе", "кришна", "кришна", "8-()"
+    ];
+
+    alert( unique(strings) ); // кришна, харе, 8-()
 </script>
 </body>
 </html>
