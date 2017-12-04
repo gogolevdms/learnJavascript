@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function sum(){
+        var result = 0;
+        for (var i = 0; i<arguments.length;i++)
+        {
+            sum = sum + arguments[i];
+        }
+        return result;
+    }
+
+    alert(sum());// 0
+    alert(sum(1));// 1
+    alert(sum(1, 2));// 3
+    alert(sum(1, 2, 3));// 6
+    alert(sum(1, 2, 3, 4));// 10
+</script>
+</html>
